@@ -1,20 +1,21 @@
 body {
-    color: white;
-    background: black;
+    color: black; /* O texto principal do body agora será preto */
+    background: white; /* O fundo principal do body agora será branco */
     margin: 0px;
     font-family: "Chakra Petch", sans-serif;
     margin-bottom: 100px;
 }
 
 header {
-    border-bottom: solid 2px rgb(255, 255, 255);
+    border-bottom: solid 2px rgb(0, 0, 0); /* Borda preta para o header */
     padding: 20px;
     font-size: 32px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); /* Texto do header agora é preto */
 }
 
+/* A seção .chamada (rosa) permanece inalterada, mantendo sua cor de fundo e texto originais */
 .chamada {
-    background: rgb(242, 179, 202);
+    background: rgb(242, 179, 202); /* Cor rosa/pêssego original */
     padding-bottom: 80px;
     padding-top: 80px;
     display: flex;
@@ -27,10 +28,13 @@ header {
 
 h1 {
     font-size: 40px;
+    /* Se o H1 estiver dentro do .chamada, ele já estará legível.
+       Se ele estivesse no body, pegaria o "color: black". */
 }
 
 p {
     font-size: 20px;
+    /* O mesmo para o parágrafo */
 }
 
 .categoria-videos {
@@ -56,5 +60,5 @@ p {
 }
 
 .categoria h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); /* Título da categoria agora é preto */
 }
